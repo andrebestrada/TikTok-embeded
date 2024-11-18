@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video de TikTok</title>
     <style>
+        /* Escalar el contenido del video TikTok */
+        .tiktok-embed iframe {
+            transform: scale(0.8); /* Ajusta el tamaño, 0.8 es un 80% del tamaño original */
+            transform-origin: top left; /* Mantener alineado el contenido */
+        }
+    
+        .tiktok-embed {
+            width: 100%; /* Ajustar el ancho del contenedor */
+            overflow: hidden; /* Ocultar contenido que sobrepase */
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
+            color: #ffffff;
             text-align: center;
         }
 
         .container {
-            max-width: 325px;
+            max-width: auto;
             margin: 0px auto;
             padding: 0px;
             background: white;
@@ -31,6 +41,9 @@
         .tiktok-container {
             margin-top: 0px;
         }
+    </style>
+    <style>
+      
     </style>
 </head>
 <body>
@@ -64,7 +77,7 @@
         // Crear dinámicamente el bloque de TikTok
         const tiktokContainer = document.getElementById('tiktok-container');
         const tiktokEmbed = `
-            <blockquote class="tiktok-embed" cite="${completeURL}" data-video-id="${videoId}" data-embed-from="embed_page" style="max-width:325px; min-width:125px;"> 
+            <blockquote class="tiktok-embed" cite="${completeURL}" data-video-id="${videoId}" data-embed-from="embed_page" style="height:auto ;max-width:325px; min-width:125px;"> 
                 <section> 
                     <a target="_blank" title="@${user}" href="https://www.tiktok.com/@${user}?refer=embed">@${user}</a>
                 </section> 
