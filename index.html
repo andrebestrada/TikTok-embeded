@@ -63,10 +63,14 @@
                 <section> 
                     <a target="_blank" title="@${user}" href="https://www.tiktok.com/@${user}?refer=embed">@${user}</a>
                 </section> 
-            </blockquote> 
-            <script async src="https://www.tiktok.com/embed.js"></script>
-        `;
+            </blockquote>`;
         tiktokContainer.innerHTML = tiktokEmbed;
+
+        // Cargar de nuevo el script de TikTok para que renderice el contenido dinámico
+        const tiktokScript = document.createElement('script');
+        tiktokScript.src = "https://www.tiktok.com/embed.js";
+        tiktokScript.async = true;
+        document.body.appendChild(tiktokScript);
     </script>
 </body>
 </html>
