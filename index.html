@@ -53,13 +53,17 @@
         const completeURL = getURLParameter('complete_url') || 'https://www.tiktok.com/@chadbi_/video/7340770788208905478';
         const user = getURLParameter('user') || 'chadbi_';
 
+        // Extraer el identificador del video desde completeURL
+        const videoIdMatch = completeURL.match(/\/video\/(\d+)/);
+        const videoId = videoIdMatch ? videoIdMatch[1] : '';
+
         // Actualizar el nombre de usuario en la página
         document.getElementById('username').textContent = `@${user}`;
 
         // Crear dinámicamente el bloque de TikTok
         const tiktokContainer = document.getElementById('tiktok-container');
         const tiktokEmbed = `
-            <blockquote class="tiktok-embed" cite="${completeURL}" data-video-id="" data-embed-from="embed_page" style="max-width:605px; min-width:325px;"> 
+            <blockquote class="tiktok-embed" cite="${completeURL}" data-video-id="${videoId}" data-embed-from="embed_page" style="max-width:605px; min-width:325px;"> 
                 <section> 
                     <a target="_blank" title="@${user}" href="https://www.tiktok.com/@${user}?refer=embed">@${user}</a>
                 </section> 
