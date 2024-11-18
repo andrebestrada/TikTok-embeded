@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video de TikTok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .tiktok-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video destacado de TikTok</h1>
+        <p>Disfruta de este video de TikTok directamente desde la fuente:</p>
+        <div class="tiktok-container">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@chadbi_/video/7340770788208905478" data-video-id="7340770788208905478" data-embed-from="embed_page" style="max-width:605px; min-width:325px;"> 
+                <section> 
+                    <a target="_blank" title="@chadbi_" href="https://www.tiktok.com/@chadbi_?refer=embed">@chadbi_</a> 
+                    <p><a title="texasholdem" target="_blank" href="https://www.tiktok.com/tag/texasholdem?refer=embed">#TEXASHOLDEM</a> @Beyoncé  🇲🇽 </p> 
+                    <a target="_blank" title="♬ TEXAS HOLD 'EM - Beyoncé" href="https://www.tiktok.com/music/TEXAS-HOLDEM-7334542274145454891?refer=embed">♬ TEXAS HOLD 'EM - Beyoncé</a> 
+                </section> 
+            </blockquote> 
+            <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+    </div>
+</body>
+</html>
